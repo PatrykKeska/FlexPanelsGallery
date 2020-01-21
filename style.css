@@ -1,0 +1,81 @@
+.body  { 
+    margin: 0 auto;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Bangers&display=swap');
+
+html{ 
+    font-size: calc(1em + 1vw);
+    font-family: 'Bangers', cursive;
+    text-transform: uppercase;
+}
+
+
+.wrapper { 
+    width: 100vw ; 
+    height: 100vh;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+
+  
+
+}
+
+.panel { 
+    font-size: 1.5em;
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 2px solid black;
+    transition:all .5s ease-out;
+    color: white;
+    font-weight: bold;
+    text-shadow: 2px 2px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    will-change: auto;
+    flex: 1;
+   
+} 
+
+
+.openPanel { 
+    flex: 5; 
+    
+}
+
+.panel1{ 
+    background-image: url('./Background1.jpg');
+
+}
+.panel2{ 
+    background-image: url('./Background2.jpg');
+}
+.panel3{ 
+    background-image: url('./Background3.jpg');
+}
+.panel4{ 
+    background-image: url('./Background4.jpg');
+}
+.panel5{ 
+    background-image: url('./Background5.jpg');
+}
+
+.moveTop{ 
+    transform: translateY(-100vh);
+    transition: all .5s ease-in-out
+}
+
+.moveBottom{ 
+    transform: translateY(100vh);
+    transition: all .5s ;
+    transition-timing-function: cubic-bezier(0, 1.02, 1, 0.29)
+}
+
+.animateText { 
+    transform: translateY(0);
+}
