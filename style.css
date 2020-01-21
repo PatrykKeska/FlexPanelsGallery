@@ -67,13 +67,12 @@ html{
 
 .moveTop{ 
     transform: translateY(-100vh);
-    transition: all .5s ease-in-out
+    transition: all .5s linear
 }
 
 .moveBottom{ 
     transform: translateY(100vh);
-    transition: all .5s ;
-    transition-timing-function: cubic-bezier(0, 1.02, 1, 0.29)
+    transition: all .5s linear ;
 }
 
 .animateText { 
